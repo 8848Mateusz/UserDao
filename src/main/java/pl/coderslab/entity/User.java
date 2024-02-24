@@ -1,10 +1,12 @@
 package pl.coderslab.entity;
+import org.mindrot.jbcrypt.BCrypt;
 
 public class User {
-private int id;
-private char userName;
-private char email;
-private char password;
+    private int id;
+    private String userName;
+    private String email;
+    private String password;
+
 
     public int getId() {
         return id;
@@ -14,27 +16,32 @@ private char password;
         this.id = id;
     }
 
-    public char getUserName() {
+    public String getUserName() {
         return userName;
     }
 
-    public void setUserName(char userName) {
+    public void setUserName(String userName) {
         this.userName = userName;
     }
 
-    public char getEmail() {
+    public String getEmail() {
         return email;
     }
 
-    public void setEmail(char email) {
+    public void setEmail(String email) {
         this.email = email;
     }
 
-    public char getPassword() {
+    public String getPassword() {
         return password;
     }
 
-    public void setPassword(char password) {
+    public void setPassword(String password) {
         this.password = password;
     }
+    @Override
+    public String toString() {
+        return "User{" + "id=" + id + ", userName='" + userName + '\'' + ", email='" + email + '\'' + '}';
+    }
 }
+
