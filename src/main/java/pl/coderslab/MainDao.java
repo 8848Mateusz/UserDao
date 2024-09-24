@@ -1,14 +1,6 @@
 package pl.coderslab;
 
-import java.sql.Connection;
-import java.sql.PreparedStatement;
-import org.mindrot.jbcrypt.BCrypt;
-import pl.coderslab.entity.User;
-import pl.coderslab.entity.UserDao;
-
-import java.sql.*;
-
-public class Main {
+public class MainDao {
 
     public static void main(String[] args) {
         //Dodawanie

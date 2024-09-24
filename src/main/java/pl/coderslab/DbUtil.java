@@ -1,8 +1,9 @@
 package pl.coderslab;
 import java.sql.Connection;
-import java.sql.*;
+import java.sql.DriverManager;
+import java.sql.SQLException;
 
-        public class DbUtil {
+public class DbUtil {
        private static final String DB_URL = "jdbc:mysql://localhost:3306/workshop2?useSSL=false&characterEncoding=utf8";
         private static final String DB_USER = "root";
        private static final String DB_PASS = "coderslab";
